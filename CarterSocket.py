@@ -22,6 +22,10 @@ def hash(data):
     ACCESS_TOKEN = data
     print('Received access token:', ACCESS_TOKEN)
 
+@sio.event
+def disconnect():
+    print("Disconnected from server. Attempting to reconnect...")
+    sio.connect(URL, headers={"key": API_KEY, "player": PLAYER}, wait_timeout=10)
 
 def send_message(message):
     response_queue.clear()
