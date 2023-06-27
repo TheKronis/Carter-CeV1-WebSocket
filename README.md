@@ -1,4 +1,4 @@
-# Carter-CeV1-WebSocket
+# ~~Carter-CeV1-WebSocket~~ NOT WORKING ANYMORE
 This is a simple Python implementation of the Carter API, which uses WebSockets for real-time communication. It provides a basic integration that can be used as a starting point for building more advanced applications. The code includes a `send_message()` function that sends a message to the API and waits for a response before returning it. The response is then printed to the console. Additionally, the code handles disconnections from the API and attempts to reconnect automatically when a new message is sent. Note that this is a basic implementation and may require further customization for your specific use case.
 
 ## Before usage
